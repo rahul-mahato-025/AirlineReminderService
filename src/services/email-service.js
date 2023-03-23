@@ -1,4 +1,4 @@
-const transporter = require("../configs/email-config");
+const transporter = require("../config/email-config");
 
 const sendBasicEmail = async (from, to, subject, text) => {
   try {

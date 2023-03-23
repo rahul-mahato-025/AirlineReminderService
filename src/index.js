@@ -1,5 +1,5 @@
 const express = require("express");
-const { PORT } = require("./configs/serverConfig");
+const { PORT } = require("./config/serverConfig");
 const { sendBasicEmail } = require("./services/email-service");
 
 const setupAndStartServer = () => {
