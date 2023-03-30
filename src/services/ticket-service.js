@@ -34,6 +34,14 @@ class TicketService {
       throw error;
     }
   }
+
+  subscribeEvents(payload) {
+    const { service, data } = payload;
+    switch (service) {
+      case "CREATE_TICKET":
+        this.create(data);
+    }
+  }
 }
 
 module.exports = TicketService;
